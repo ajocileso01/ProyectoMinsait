@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Sostenibilidad</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/LogoEcoEventos.png" alt="Logo Eventos Sostenibles">
+                <h1>EcoEventos</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </ul>
+        </nav>
+        </div>
+    </header>
+    <main class="eventos-main">
+        <div class="container">
+            <section class="filtros">
+                <h2>Encuentra tu evento ideal</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="categoria">Categoría:</label>
+                        <select id="categoria" name="categoria">
+                            <option value="todas">Todas las categorías</option>
+                            <option value="foro">Foros</option>
+                            <option value="cumbre">Cumbres</option>
+                            <option value="taller">Talleres</option>
+                            <option value="expo">Exposiciones</option>
+                            <option value="webinar">Webinars</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha:</label>
+                        <select id="fecha" name="fecha">
+                            <option value="todas">Todas las fechas</option>
+                            <option value="proximos">Próximos 30 días</option>
+                            <option value="trimestre">Este trimestre</option>
+                            <option value="semestre">Este semestre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tema">Tema principal:</label>
+                        <select id="tema" name="tema">
+                            <option value="todos">Todos los temas</option>
+                            <option value="energia">Energías renovables</option>
+                            <option value="movilidad">Movilidad sostenible</option>
+                            <option value="economia">Economía circular</option>
+                            <option value="tecnologia">Tecnología verde</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Buscar Eventos</button>
+                </form>
+            </section>
+            <section class="listado-eventos">
+                <h2>Eventos Destacados</h2>
+                <div class="eventos-grid">
+                    <article class="evento-card">
+                        <img src="images/Foro.jpg" alt="Foro Global de Energías Renovables">
+                        <div class="evento-info">
+                            <h3>Foro Global de Energías Renovables</h3>
+                            <p class="evento-fecha">8-10 Marzo 2026</p>
+                            <p class="evento-descripcion">Punto de encuentro anual para líderes en energía limpia e innovadores tecnológicos para acelerar la transición energética.</p>
+                            <div class="evento-meta">
+                                <span class="evento-categoria">Foro Internacional</span>
+                                <span class="evento-ubicacion">Lisboa, Portugal</span>
+                            </div>
+                            <a href="detalle_evento.html" class="btn">Reservar Entrada</a>
+                        </div>
+                    </article>
+
+                    <article class="evento-card">
+                        <img src="images/CiudadesSolares.jpg" alt="Cumbre de Ciudades Solares">
+                        <div class="evento-info">
+                            <h3>Cumbre de Ciudades Solares</h3>
+                            <p class="evento-fecha">15 Abril 2026</p>
+                            <p class="evento-descripcion">Explora cómo las ciudades están integrando energía solar en su infraestructura urbana y planeamiento estratégico.</p>
+                            <div class="evento-meta">
+                                <span class="evento-categoria">Cumbre</span>
+                                <span class="evento-ubicacion">Sevilla, España</span>
+                            </div>
+                            <a href="#" class="btn">Reservar Entrada</a>
+                        </div>
+                    </article>
+                    <article class="evento-card">
+                        <img src="images/hidrogeno.jpg" alt="Expo Hidrógeno Verde">
+                        <div class="evento-info">
+                            <h3>Expo Hidrógeno Verde</h3>
+                            <p class="evento-fecha">22-24 Mayo 2026</p>
+                            <p class="evento-descripcion">La mayor exposición de tecnologías y proyectos de hidrógeno verde en Europa con demostraciones en vivo.</p>
+                            <div class="evento-meta">
+                                <span class="evento-categoria">Exposición</span>
+                                <span class="evento-ubicacion">Rotterdam, Países Bajos</span>
+                            </div>
+                            <a href="#" class="btn">Reservar Entrada</a>
+                        </div>
+                    </article>
+                    <article class="evento-card">
+                        <img src="images/Congreso de Movilidad Eléctrica.jpg" alt="Congreso de Movilidad Eléctrica">
+                        <div class="evento-info">
+                            <h3>Congreso de Movilidad Eléctrica</h3>
+                            <p class="evento-fecha">5-7 Junio 2026</p>
+                            <p class="evento-descripcion">Analizamos el futuro del transporte eléctrico con los principales fabricantes y expertos en infraestructura.</p>
+                            <div class="evento-meta">
+                                <span class="evento-categoria">Congreso</span>
+                                <span class="evento-ubicacion">Berlín, Alemania</span>
+                            </div>
+                            <a href="#" class="btn">Reservar Entrada</a>
+                        </div>
+                    </article>
+                    <article class="evento-card">
+                        <img src="images/Simposio de Agricultura Regenerativa.jpg" alt="Simposio de Agricultura Regenerativa">
+                        <div class="evento-info">
+                            <h3>Simposio de Agricultura Regenerativa</h3>
+                            <p class="evento-fecha">18 Junio 2026</p>
+                            <p class="evento-descripcion">Técnicas innovadoras para restaurar suelos y aumentar la productividad de forma sostenible.</p>
+                            <div class="evento-meta">
+                                <span class="evento-categoria">Simposio</span>
+                                <span class="evento-ubicacion">Online</span>
+                            </div>
+                            <a href="#" class="btn">Registrarse</a>
+                        </div>
+                    </article>
+                    <article class="evento-card">
+                        <img src="images/Feria de Construcción Sostenible.jpg" alt="Feria de Construcción Sostenible">
+                        <div class="evento-info">
+                            <h3>Feria de Construcción Sostenible</h3>
+                            <p class="evento-fecha">10-12 Julio 2026</p>
+                            <p class="evento-descripcion">Materiales innovadores y técnicas de construcción con mínimo impacto ambiental y máxima eficiencia energética.</p>
+                            <div class="evento-meta">
+                                <span class="evento-categoria">Feria</span>
+                                <span class="evento-ubicacion">Copenhague, Dinamarca</span>
+                            </div>
+                            <a href="#" class="btn">Reservar Entrada</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre EcoEventos</h3>
+                    <p>Plataforma líder en eventos sobre sostenibilidad y energías limpias. Conectamos profesionales, empresas y entusiastas del sector renovable.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>ajocileso01@ecoeventos.com</p>
+                    <p>+34 987 654 321</p>
+                    <p>Avenida Renovable, 45<br>Badajoz, España</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/logoFacebook.jpg" alt="Facebook"></a>
+                        <a href="#"><img src="images/LogoX.jpg" alt="Twitter"></a>
+                        <a href="#"><img src="images/LogoIG.jpg" alt="Instagram"></a>
+                        <a href="#"><img src="images/LogoYoutube.jpg" alt="Youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EcoEventos. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
